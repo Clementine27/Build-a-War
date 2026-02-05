@@ -1,3 +1,4 @@
+from flask import render_template
 from app import app 
 
 # view funcs are funcs called when user 
@@ -13,4 +14,6 @@ from app import app
 @app.route("/index")
 # invoke this func 
 def index(): 
-    return "hello there, gorgeous!"
+    # return "hello there, gorgeous!"
+    # user = {"username"}
+    return render_template('index.html')
